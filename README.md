@@ -12,7 +12,7 @@ Using CookieCutter for your project
 -----------------------------------
 
     $ pip install cookiecutter
-    $ cookiecutter https://github.com/wdm0006/cookiecutter-pipproject.git
+    $ cookiecutter https://github.com/jburos/cookiecutter-pipproject.git
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
 
@@ -29,21 +29,20 @@ Goals
 -----
 
 The goal of this project is simply to take some of the boiler plate out of creating a new python project. It is intended
-to stay pretty minimal, but contains everything needed to make a project that includes:
+to stay pretty minimal, but contains best-practices in use by the Hammer Lab. 
+
+These projects at a minimum will include:
 
  * Sphinx documentation
  * Installable via pip in pypi
  * Testing via Nose and Coverage
+ * Code linting via pylint 
+ * Travis CI configuration
 
-In the future, we may include some other things like:
-
- * basic travic ci configuration
- * anything else you think might make sense (open up an issue with ideas).
- 
 Contributing
 ------------
 
-The intent of this project is to stay fairly lean, but if you have any suggestions or would like to help out, please let me know.
+The intent of this project is to stay fairly lean, but up to date with current best-practices in use by our lab.
 
 License
 -------
