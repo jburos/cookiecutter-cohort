@@ -38,3 +38,12 @@ docs/_build
 
 # Cookiecutter
 output/
+
+# hammer lab defaults
+env
+venv
+*.pyc
+.ipynb_checkpoints
+cache
+ENV.sh
+generated/
