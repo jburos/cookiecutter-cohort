@@ -5,5 +5,4 @@
 	"project_name": "My Pip Installable Python Package",
 	"app_name": "mypippkg",
 	"project_short_description": "A python package that can be installed with pip.",
-	"version": "0.0.1"
 }

@@ -4,8 +4,6 @@ from codecs import open
 from os import path
 import versioneer
 
-__version__ = '{{cookiecutter.version}}'
-
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
@@ -27,7 +25,7 @@ setup(
     description='{{cookiecutter.project_short_description}}',
     long_description=long_description,
     url='https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}',
-    download_url='https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}/tarball/' + __version__,
+    download_url='https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}/tarball/' + versioneer.get_version(),
     license="http://www.apache.org/licenses/LICENSE-2.0.html",
     classifiers=[
         "Development Status :: 3 - Alpha",
