@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 from codecs import open
 from os import path
+import versioneer
 
 __version__ = '{{cookiecutter.version}}'
 
@@ -17,9 +18,26 @@ with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
 install_requires = [x.strip() for x in all_reqs if 'git+' not in x]
 dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' not in x]
 
+readme = ""
+try:
+    with open(readme_path, "r") as f:
+        readme = f.read()
+except IOError as e:
+    print(e)
+    print("Failed to open %s" % readme_path)
+
+try:
+    import pypandoc
+    readme = pypandoc.convert(readme, to="rst", format="md")
+except ImportError as e:
+    print(e)
+    print("Failed to convert %s to reStructuredText", readme_filename)
+    pass
+
 setup(
     name='{{cookiecutter.app_name}}',
-    version=__version__,
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description='{{cookiecutter.project_short_description}}',
     long_description=long_description,
     url='https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}',
