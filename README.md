@@ -27,8 +27,8 @@ Each Cohort at a minimum will include:
 
 See additional documentation about [Cohorts](http://github.com/hammerlab/cohorts) for details:
 
-    * [README](http://github.com/hammerlab/cohorts/README.md)
-    * [Quick-start](https://github.com/hammerlab/cohorts/blob/master/docs/quick-start.md)
+ * [README](http://github.com/hammerlab/cohorts/README.md)
+ * [Quick-start](https://github.com/hammerlab/cohorts/blob/master/docs/quick-start.md)
 
 In addition, each project using [Cohorts](http://github.com/hammerlab/cohorts) will include:
 
