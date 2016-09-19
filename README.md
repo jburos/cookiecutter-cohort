@@ -26,17 +26,19 @@ Each Cohort at a minimum will include:
  * Cohort name
 
 See additional documentation about [Cohorts](http://github.com/hammerlab/cohorts) for details:
+
     * [README](http://github.com/hammerlab/cohorts/README.md)
-    * [Quick-start](http://github.com/hammerlab/cohorts/) [to come]
+    * [Quick-start](https://github.com/hammerlab/cohorts/blob/master/docs/quick-start.md)
 
 In addition, each project using [Cohorts](http://github.com/hammerlab/cohorts) will include:
+
  * Code linting via pylint
  * requirements.txt to ease set up
 
 Contributing
 ------------
 
-The intent of this project is to stay fairly lean, but up to date with current best-practices in use by our lab.
+The intent of this project is to stay fairly lean, but up to date with current recommendations in use by our lab.
 
 License
 -------
