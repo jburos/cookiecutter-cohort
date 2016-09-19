@@ -1,43 +1,37 @@
-CookieCutter Pip-Project
+CookieCutter Cohort
 ========================
 
-A cookiecutter template for python projects intended to be pip-installed
+A cookiecutter template for [Cohort](http://github.com/hammerlab/cohorts) analysis project
 
-[cookiecutter](https://github.com/audreyr/cookiecutter)
+Inspired by [cookiecutter](https://github.com/audreyr/cookiecutter) and [sloria](https://github.com/sloria/cookiecutter-flask.git).
 
-Inspired by: [sloria](https://github.com/sloria/cookiecutter-flask.git)
-
-
-Using CookieCutter for your project
+Using CookieCutter to set up your Cohort for analysis
 -----------------------------------
 
     $ pip install cookiecutter
-    $ cookiecutter https://github.com/jburos/cookiecutter-pipproject.git
+    $ cookiecutter https://github.com/jburos/cookiecutter-cohort.git
 
-You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
+You will be asked about your cohort's info (name, etc.). This info will be used to create a template directory structure for your new project.
 
 
-Publishing your project to pypi
--------------------------------
-
-There are two ways to publish your project:
-
- * the manual way, outlined [here](http://www.willmcginnis.com/2015/11/12/create-a-pip-installable-python-package-in-2-minutes/)
- * and with pypi-publisher [ppp](https://github.com/wdm0006/pypi-publisher)
- 
 Goals
 -----
 
-The goal of this project is simply to take some of the boiler plate out of creating a new python project. It is intended
-to stay pretty minimal, but contains best-practices in use by the Hammer Lab. 
+The goal of this project is simply to take some of the boiler plate out of creating a new Cohort project. It is intended
+to stay pretty minimal, but contains best-practices in use by the Hammer Lab.
 
-These projects at a minimum will include:
+Each Cohort at a minimum will include:
 
- * Sphinx documentation
- * Installable via pip in pypi
- * Testing via Nose and Coverage
- * Code linting via pylint 
- * Travis CI configuration
+ * Clinical data
+ * Cohort name
+
+See additional documentation about [Cohorts](http://github.com/hammerlab/cohorts) for details:
+    * [README](http://github.com/hammerlab/cohorts/README.md)
+    * [Quick-start](http://github.com/hammerlab/cohorts/) [to come]
+
+In addition, each project using [Cohorts](http://github.com/hammerlab/cohorts) will include:
+ * Code linting via pylint
+ * requirements.txt to ease set up
 
 Contributing
 ------------
